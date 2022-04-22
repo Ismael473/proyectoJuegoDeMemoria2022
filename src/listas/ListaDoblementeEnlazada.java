@@ -42,13 +42,34 @@ public class ListaDoblementeEnlazada {
             cola.siguiente = null;
         }
 
-        //va a demostrar los nodos de la lista
-        public void demostrar(){
-            //El nodo actual apuntará a la cabeza
-            if (cabeza == null){
-                System.out.println();
-            }
+
+    }
+    //va a demostrar los nodos de la lista
+    public void demostrar(){
+        //El nodo actual apuntará a la cabeza
+        Node actual = cabeza;
+        if (cabeza == null){
+            System.out.println("La lista está vacía");
+        }
+        System.out.println("Nodos de la lista doblemente enlazada");
+        while(actual != null){
+            // Imprime todos los nodos al incrementar un puntero
+            System.out.println(actual.data +" ");
+            actual = actual.siguiente;
+
         }
     }
 
+    public static void main(String[] args) {
+        ListaDoblementeEnlazada dLista = new ListaDoblementeEnlazada();
+        // se añaden nodos a la lista
+        dLista.añadeNode(1);
+        dLista.añadeNode(1);
+        dLista.añadeNode(1);
+        dLista.añadeNode(1);
+        dLista.añadeNode(1);
+        dLista.demostrar();
+
+
+    }
 }
