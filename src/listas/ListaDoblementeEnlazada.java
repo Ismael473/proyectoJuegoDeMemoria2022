@@ -4,13 +4,29 @@ import org.w3c.dom.Node;
 
 public class ListaDoblementeEnlazada {
 
+    /**
+     * Instituto Tecnológico de Costa Rica
+     * Ingeniería en Computadores
+     * Algoritmos y Estructuras de Datos 1
+     * Proyecto 1
+     * profesor: Luis Diego Nogera Mena
+     * estudiante: Ismael Arnesto Mena Briones
+     * carné: 2020426050
+     *
+     * En esta clase se manipulan las imagenes que fueron almacenadas en sus respectivas
+     * categorías me diante la implementación de un nodo el cual almacena datos y la posición
+     * siguiente y anterior, debido al tipo de lista que es, a su vez es conciente de su cabeza
+     * y cola, para tener un mejor desplazamiento por los datos de la lista.
+     *
+     * */
+
     // Se crea la clase nodo
    class Node{
        int data;
        Node anterior;
        Node siguiente;
 
-       public Node(int data){
+       public Node(int data){// cambiar int por un string
            this.data = data;
        }
    }
